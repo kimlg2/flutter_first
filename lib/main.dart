@@ -32,6 +32,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,18 +40,32 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('홈'),
       ),
       body: Center(
-        child: Text(
-          '0',
-          style:
-          TextStyle(
-              color: Colors.red,
-              fontSize: 70
-          ),
+
+        child: Column(
+          children: [
+          Text(
+              '$count',
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 70,
         ),
+          ),
+            Text(
+              '$count',
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 70,
+              ),
+            ),
+  ],
       ),
+    ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print('클릭');
+          //화면 갱신
+         setState(() {
+           count++;
+         });
         },
         child: Icon(Icons.add),
       ),
