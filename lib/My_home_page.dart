@@ -17,76 +17,78 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
 
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              color: Colors.blue,
-              width: 50,
-              height: 50,
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Container(
-              height: 30,
-            ),
-            Text(
-              '숫자',
-              style: TextStyle(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
                 color: Colors.blue,
-                fontSize: 35,
+                width: 50,
+                height: 50,
               ),
-            ),
-            Text(
-              '$number',
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 70,
+              SizedBox(
+                height: 30,
               ),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print('ElevatedButton');
-              },
-              child: Text("ElevatedButton"),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text('TextButton'),
-            ),
-            OutlinedButton(
-
-
-              onPressed: () {},
-              child: Text('OutlinedButton'),
-
-            ),
-            TextField(
-
-              decoration: InputDecoration(
-
-                labelText: '글자',
-                 border: OutlineInputBorder(),
+              Container(
+                height: 30,
               ),
-
-              onChanged: (text) {
-                print(text);
-              },
-              ),
-
-            Container(
-              color: Colors.blue,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Image.asset('assets/cookie.png',
-                  width: 150,
-                  height: 150,
+              Text(
+                '숫자',
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 35,
                 ),
               ),
-            ),
-
-          ] ,
+              Text(
+                '$number',
+                style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 70,
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  print('ElevatedButton');
+                },
+                child: Text("ElevatedButton"),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text('TextButton'),
+              ),
+              OutlinedButton(
+          
+          
+                onPressed: () {},
+                child: Text('OutlinedButton'),
+          
+              ),
+              TextField(
+          
+                decoration: InputDecoration(
+          
+                  labelText: '글자',
+                   border: OutlineInputBorder(),
+                ),
+          
+                onChanged: (text) {
+                  print(text);
+                },
+                ),
+          
+              Container(
+                color: Colors.blue,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Image.asset('assets/cookie.png',
+                    width: 150,
+                    height: 150,
+                  ),
+                ),
+              ),
+          
+            ] ,
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
