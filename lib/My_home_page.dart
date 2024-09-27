@@ -63,18 +63,29 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text('OutlinedButton'),
           
               ),
-              TextField(
-          
-                decoration: InputDecoration(
-          
-                  labelText: '글자',
-                   border: OutlineInputBorder(),
-                ),
-          
-                onChanged: (text) {
-                  print(text);
-                },
-                ),
+              Row(
+                children: [
+                  Expanded(
+                    flex: 3,
+                    child: TextField(
+                      decoration: InputDecoration(
+                        labelText: '글자',
+                         border: OutlineInputBorder(),
+                      ),
+                    
+                      onChanged: (text) {
+                        print(text);
+                      },
+                      ),
+                  ),
+                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text('login'),
+                    ),
+                  ),
+                ],
+              ),
           
               Container(
                 color: Colors.blue,
