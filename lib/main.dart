@@ -14,9 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
        primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(),
