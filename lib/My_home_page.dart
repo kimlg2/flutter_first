@@ -90,13 +90,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: ElevatedButton(
                       onPressed: () {
                           print(_textController.text);
+
+                          setState(() {
+                          });
                       },
                       child: Text('login'),
                     ),
                   ),
                 ],
               ),
-          
+              Text(_textController.text),
               Container(
                 color: Colors.blue,
                 child: Padding(
