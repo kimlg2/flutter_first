@@ -25,6 +25,12 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 50,
               height: 50,
             ),
+            SizedBox(
+              height: 30,
+            ),
+            Container(
+              height: 30,
+            ),
             Text(
               '숫자',
               style: TextStyle(
