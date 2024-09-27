@@ -52,15 +52,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
             ),
             TextField(
+
               decoration: InputDecoration(
+
                 labelText: '글자',
                  border: OutlineInputBorder(),
               ),
+
               onChanged: (text) {
                 print(text);
               },
               ),
-
+            Image.asset('assets/cookie.png',
+              width: 300,
+              height: 300,
+            ),
           ] ,
         ),
       ),
