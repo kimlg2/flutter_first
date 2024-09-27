@@ -20,6 +20,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              color: Colors.blue,
+              width: 50,
+              height: 50,
+            ),
             Text(
               '숫자',
               style: TextStyle(
@@ -63,10 +68,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 print(text);
               },
               ),
-            Image.asset('assets/cookie.png',
-              width: 300,
-              height: 300,
+
+            Container(
+              color: Colors.blue,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset('assets/cookie.png',
+                  width: 150,
+                  height: 150,
+                ),
+              ),
             ),
+
           ] ,
         ),
       ),
