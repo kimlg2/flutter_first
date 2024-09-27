@@ -45,10 +45,22 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text('TextButton'),
             ),
             OutlinedButton(
+
+
               onPressed: () {},
               child: Text('OutlinedButton'),
 
             ),
+            TextField(
+              decoration: InputDecoration(
+                labelText: '글자',
+                 border: OutlineInputBorder(),
+              ),
+              onChanged: (text) {
+                print(text);
+              },
+              ),
+
           ] ,
         ),
       ),
